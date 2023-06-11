@@ -1,11 +1,9 @@
-.our__team--container ul {
-  list-style: none;
-}
-.our__team--container {
+.section--background {
   background: #f5f4fa;
 }
 .section {
-  padding: 94px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container {
@@ -15,9 +13,34 @@
   margin-right: auto;
 }
 
-.flex__container {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 768px) {
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .team__list {
@@ -34,30 +57,75 @@
   display: flex;
 }
 
-.team__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
+
 .team__item {
-  background: #ffffff;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
 }
 
-.team__img {
+@media screen and (min-width: 768px) {
+  .team__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    -ms-flex-preferred-size: calc(100% / 4 - 30px);
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.team__image {
   margin-bottom: 30px;
 }
 
 .team__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 10px;
+  color: #212121;
+  font-weight: 500;
 }
-.title {
+
+.team__name,
+.team__position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team__position {
+  margin-bottom: 16px;
+}
+
+.social-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.section__title {
   margin-bottom: 30px;
   color: #212121;
   font-weight: 700;
@@ -66,46 +134,58 @@
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
 .team__title {
   margin-bottom: 16px;
+}
+
+.team__title {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
-.social__icon--list {
-  display: flex;
-  margin: auto 30px;
+.social-team__item + .social-team__item {
+  margin-left: 10px;
 }
 
-.social__icon--link:hover,
-.social__icon--link:focus {
+.social-team__link:hover,
+.social-team__link:focus {
   background-color: #2196f3;
-  color: white;
+  color: #fff;
 }
-.social__icon:not(:last-child) {
-  margin-right: 15px;
+
+.social-team__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  color: #afb1b8;
+  border-radius: 50%;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-team__icon {
+  fill: currentColor;
 }
 
 .link {
   text-decoration: none;
   color: inherit;
-}
-
-.social__icon--link {
-  color: #afb1b8;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  margin-left: 10px;
-}
-.social__icon--link:hover,
-.social__icon--link:focus {
-  background-color: #2196f3;
-  color: white;
 }

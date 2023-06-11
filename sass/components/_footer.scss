@@ -1,22 +1,35 @@
-.footer {
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.container__footer {
-  display: flex;
-  justify-content: left;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .container__footer {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.footer {
+  margin-top: -60px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -33,27 +46,10 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .container__footer {
+  .footer {
     margin-top: -12px;
     margin-left: -87px;
     text-align: left;
-  }
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
   }
 }
 
@@ -93,9 +89,107 @@
   margin: 0;
 }
 
+address {
+  font-style: normal;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address__contact:hover,
+.address__contact:focus {
+  color: #fff;
+}
 .link {
   text-decoration: none;
   color: inherit;
+}
+
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer-grid {
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-grid {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-grid {
+    margin-top: 12px;
+    margin-left: 87px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__heading {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+
+.social-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.social-footer__item + .social-footer__item {
+  margin-left: 10px;
+}
+
+.social-footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 50%;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-footer__link:hover,
+.social-footer__link:focus {
+  background-color: #2196f3;
+  color: #fff;
 }
 
 .footer-contacts {
@@ -103,6 +197,99 @@
   line-height: 24px;
 }
 
+.social-footer__icon {
+  fill: currentColor;
+}
+
+.footer-form__input {
+  margin: 0 0 20px 0;
+  padding: 14px 16px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: #fff;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form__input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__input:hover,
+.footer-form__input:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    margin: 0 12px 0 0;
+    width: 358px;
+  }
+}
+
+.button__primary {
+  display: block;
+  margin: auto;
+  padding: 10px 0;
+  width: 200px;
+  background-color: #2196f3;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__primary:hover,
+.button__primary:focus {
+  background-color: #188ce8;
+}
+
+@media screen and (min-width: 1200px) {
+  .button__primary {
+    display: inline-block;
+  }
+}
+
+.button__primary--center {
+  display: block;
+  margin: auto;
+}
+.button__icon {
+  margin-left: 4px;
+  vertical-align: middle;
+  fill: currentColor;
+}
 .find__us--text {
   color: white;
   font-weight: 700;
