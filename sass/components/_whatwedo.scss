@@ -1,73 +1,19 @@
-/*what we do */
+.section--padding {
+  padding-top: 0px;
+}
+
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.section--small {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-
-  .section--small {
-    display: block;
-    padding-top: 0;
-  }
+  padding: 94px 0px;
 }
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
-.section__title {
-  margin-bottom: 30px;
-  color: #212121;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .section__title {
-    margin-bottom: 50px;
-    font-size: 36px;
-  }
-}
-
-.services {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.flex__container {
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  flex-direction: column;
 }
 
 .list {
@@ -76,25 +22,28 @@
   margin: 0;
 }
 
-.services__item {
-  -ms-flex-preferred-size: calc(100% / 3 - 30px);
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-  position: relative;
-}
-.services__description {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: #fff;
+.whatwe__do--lists {
+  display: flex;
+  list-style-type: none;
 }
 
-/*what we do */
+.what__we-do--item:not(:last-child) {
+  margin-right: 30px;
+}
+.what__we-do--item {
+  position: relative;
+}
+
+.whatwe__do--txt {
+  position: absolute;
+  padding: 27px 27px;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 16px;
+}
