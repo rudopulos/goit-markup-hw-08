@@ -1,0 +1,51 @@
+.work {
+  padding: 94px 0px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content--list {
+  display: flex;
+}
+
+.text--content:not(:last-child) {
+  margin-right: 30px;
+}
+
+.service__icon {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.text__title {
+  color: #212121;
+  margin: 0px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 16px;
+}
+
+.text {
+  margin: 0px;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  color: #757575;
+}

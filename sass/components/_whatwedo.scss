@@ -1,0 +1,49 @@
+.section--padding {
+  padding-top: 0px;
+}
+
+.section {
+  padding: 94px 0px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.whatwe__do--lists {
+  display: flex;
+  list-style-type: none;
+}
+
+.what__we-do--item:not(:last-child) {
+  margin-right: 30px;
+}
+.what__we-do--item {
+  position: relative;
+}
+
+.whatwe__do--txt {
+  position: absolute;
+  padding: 27px 27px;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 16px;
+}

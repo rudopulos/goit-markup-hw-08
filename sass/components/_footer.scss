@@ -1,0 +1,117 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: left;
+}
+
+.footer__items {
+  margin-right: 70px;
+}
+.logo--link {
+  font-style: normal;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 24px;
+}
+
+.find__us--text {
+  color: white;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.findus__icon__list {
+  display: flex;
+}
+
+.findus__icon__link:hover,
+.findus__icon__link:focus {
+  background-color: #2196f3;
+}
+.find__us--icon:not(:last-child) {
+  margin-right: 10px;
+}
+.findus__icon__link svg {
+  fill: currentColor;
+}
+.findus__icon__link {
+  color: white;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.subscribe__form {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 16px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 95px;
+}
+
+.subscribe__items {
+  display: flex;
+}
+
+.subscribe__field {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 16px 18px;
+  width: 358;
+  height: 50px;
+  margin-right: 12px;
+  margin-left: 95px;
+  background-color: #2f303a;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe__field:hover,
+.subscribe__field:focus {
+  border-color: white;
+}

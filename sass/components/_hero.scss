@@ -1,0 +1,31 @@
+.hero {
+  padding: 200px 0 200px 0px;
+  background-color: #2f303a;
+  background: linear-gradient(rgba(47, 48, 58, 0.4));
+  background: url(../images/hero_bg.jpg);
+  background-size: cover;
+}
+
+.hero__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 1600px;
+}
+
+.hero--container__font {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 6%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+  height: 120px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
