@@ -306,7 +306,7 @@
           const service = item.querySelector('.portfolio__service');
           const serviceText = service ? service.textContent.trim().toLowerCase() : '';
 
-          if (filter === 'all' || serviceText.includes(filter)) {
+          if (filter === 'all' || filter.startsWith(serviceText)) {
             item.style.display = '';
           } else {
             item.style.display = 'none';
